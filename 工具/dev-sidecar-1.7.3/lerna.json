@@ -1,0 +1,18 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        "config",
+        "doc"
+      ]
+    },
+    "bootstrap": {
+      "ignore": []
+    }
+  },
+  "version": "1.7.3"
+}

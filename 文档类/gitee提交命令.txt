@@ -1,0 +1,17 @@
+git config --global user.name "杨宏超"
+git config --global user.email "9469647+vaeyhc@user.noreply.gitee.com"
+创建 git 仓库:
+
+mkdir Development-tools
+cd Development-tools
+git init 
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://gitee.com/vaeyhc/Development-tools.git
+git push -u origin "master"
+已有仓库?
+
+cd existing_git_repo
+git remote add origin https://gitee.com/vaeyhc/Development-tools.git
+git push -u origin "master"
