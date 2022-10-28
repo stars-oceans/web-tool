@@ -20,3 +20,12 @@ git push -u origin main
 git remote add origin https://github.com/stars-oceans/xxx.git
 git branch -M main
 git push -u origin main
+
+1.git init
+2.git remote add origin https://github.com/stars-oceans/xxx.git
+3.git add .
+//创建一个分支
+4.git branch -M main
+//推代码
+5.git push -u origin main
+

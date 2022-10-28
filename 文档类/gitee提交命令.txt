@@ -3,6 +3,7 @@ git config --global user.email "9469647+vaeyhc@user.noreply.gitee.com"
 创建 git 仓库:
 
 mkdir Development-tools
+
 cd Development-tools
 git init 
 touch README.md
@@ -15,3 +16,9 @@ git push -u origin "master"
 cd existing_git_repo
 git remote add origin https://gitee.com/vaeyhc/Development-tools.git
 git push -u origin "master"
+
+1.git init 
+2.git remote add origin https://gitee.com/vaeyhc/Development-tools.git
+3.git add .
+4.git commit -m "first commit"
+5.git push -u origin "master"
