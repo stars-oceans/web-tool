@@ -1,0 +1,18 @@
+1.记事本打开，写入以下代码：
+地址：
+C:\Windows\System32\drivers\etc\hosts
+
+20.205.243.166 github.com
+# GitHub Start
+140.82.114.4 github.com
+199.232.69.194 github.global.ssl.fastly.net
+# GitHub End
+
+
+2.cmd命令行：
+ipconfig/flushdns
+
+
+3.goole 翻译
+
+142.250.4.90 translate.googleapis.com
