@@ -34,13 +34,63 @@ git push -u origin main
 如果是已有仓库
 一个普通的文件
 想上传仓库
-
+0.初始化
+git init
 1.查看关联地址
 git remote -v 
 2.删除关联地址
 git remote rm origin
-
-3.
+3.重新链接想要的仓库
 git remote add origin https://github.com/stars-oceans/xxx.git
+
+
+温柔型方案：
+通过git pull origin main先将本地库更新到与远程库一致的版本，但要注意本地库后来做的修改可能被覆盖，最好使用git fetch(不会自动合并)，
+查看更新情况再有选择合并，或者先将本地库修改过的文件备份，git pull后再重新修改；
+再运行git push即可成功。
+
+git pull origin 分支名   　　　// 更新本地仓库数据
+//合并
+git merge　要合并的分支名　    // 重新合并分支
+git push origin 远程分支名　  // 提交合并后的数据
+
+## 谨慎使用：
+暴力型方案：
+git提供了一种强制上传的方式：git push -f ，它会忽略版本不一致等问题，强制将本地库上传的远程库，但是一定要谨慎使用，
+因为-f会用本地库覆盖掉远程库，如果远程库上有重要更新，或者有其他同伴做的修改，也都会被覆盖，所以一定要在确定无严重后果的前提下使用此操作。
+————————————————
+版权声明：本文为CSDN博主「weixin_44118318」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_44118318/article/details/85030461
+强制提交代码：
+//git push --force origin main
+4.git push -f origin main
+再
+5.git add .
+
+git commit -m '***'
+
+6.git push -u origin  main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
