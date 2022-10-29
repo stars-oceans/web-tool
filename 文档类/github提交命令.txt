@@ -68,7 +68,7 @@ git checkout master
 
 2.拉去远程仓库的代码
 
-git pull
+git pull origin master
 
 3.在切换到自己的分支
 
