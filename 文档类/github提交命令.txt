@@ -42,12 +42,10 @@ git remote -v
 git remote rm origin
 3.重新链接想要的仓库
 git remote add origin https://github.com/stars-oceans/xxx.git
+4.//创建一个分支
+git branch -M 名字
 
 
-温柔型方案：
-通过git pull origin main先将本地库更新到与远程库一致的版本，但要注意本地库后来做的修改可能被覆盖，最好使用git fetch(不会自动合并)，
-查看更新情况再有选择合并，或者先将本地库修改过的文件备份，git pull后再重新修改；
-再运行git push即可成功。
 
 git pull origin 分支名   　　　// 更新本地仓库数据
 //合并
@@ -91,15 +89,13 @@ git checkout master
  git merge 自己的分支
 OK，键入这个命令后我们就成功地将本地的dev合并到了master分支上，之后再使用push命令将本地的master推送到远程仓库就可以啦
 ————————————————
-版权声明：本文为CSDN博主「kedaji」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/kedaji/article/details/104733446
-
 这样就完成了，从主分支上的代码拉去到自己的分支的具体流程
-————————————————
-版权声明：本文为CSDN博主「weixin_48992836」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/weixin_48992836/article/details/119146568
 
 
+温柔型方案：
+通过git pull origin main先将本地库更新到与远程库一致的版本，但要注意本地库后来做的修改可能被覆盖，最好使用git fetch(不会自动合并)，
+查看更新情况再有选择合并，或者先将本地库修改过的文件备份，git pull后再重新修改；
+再运行git push即可成功。
 ## 谨慎使用：
 暴力型方案：
 git提供了一种强制上传的方式：git push -f ，它会忽略版本不一致等问题，强制将本地库上传的远程库，但是一定要谨慎使用，
