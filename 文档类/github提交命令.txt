@@ -29,3 +29,15 @@ git push -u origin main
 //推代码
 5.git push -u origin main
 
+
+
+如果是已有仓库
+一个普通的文件
+想上传仓库
+
+1.查看关联地址
+
+2.删除关联地址
+git remote rm origin
+
+
