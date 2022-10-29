@@ -54,6 +54,52 @@ git pull origin 分支名   　　　// 更新本地仓库数据
 git merge　要合并的分支名　    // 重新合并分支
 git push origin 远程分支名　  // 提交合并后的数据
 
+查看分支
+git branch #列出**本地**所有的分支
+查看分支详细信息
+
+git branch -v #列出本地所有的分支, + hash 信息
+查看分支与远程的关联
+git branch -vv #列出本地所有的分支, + hash 信息 + 与远程的关联信息
+git如何把master上的代码，合并到自己的分支
+
+0.git branch -v （查看所在的分支）
+1.切换到主分支 （master）
+
+git checkout master
+
+2.拉去远程仓库的代码
+
+git pull
+
+3.在切换到自己的分支
+
+git checkout 分支名称
+
+4.把主分支的代码merge合并到自己的分支上面
+
+git merge master
+
+5.使用上传命令push
+
+git push origin 自己的分支
+
+如果 把自己的分支 合并到 主分支
+
+先从dev分支切换到master分支，使用checkout命令
+git checkout master
+ git merge 自己的分支
+OK，键入这个命令后我们就成功地将本地的dev合并到了master分支上，之后再使用push命令将本地的master推送到远程仓库就可以啦
+————————————————
+版权声明：本文为CSDN博主「kedaji」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/kedaji/article/details/104733446
+
+这样就完成了，从主分支上的代码拉去到自己的分支的具体流程
+————————————————
+版权声明：本文为CSDN博主「weixin_48992836」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_48992836/article/details/119146568
+
+
 ## 谨慎使用：
 暴力型方案：
 git提供了一种强制上传的方式：git push -f ，它会忽略版本不一致等问题，强制将本地库上传的远程库，但是一定要谨慎使用，
