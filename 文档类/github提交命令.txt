@@ -36,8 +36,11 @@ git push -u origin main
 想上传仓库
 
 1.查看关联地址
-
+git remote -v 
 2.删除关联地址
 git remote rm origin
+
+3.
+git remote add origin https://github.com/stars-oceans/xxx.git
 
 
